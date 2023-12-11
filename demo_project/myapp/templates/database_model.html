@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Django Database Model</title>
+</head>
+<body>
+
+    <h1>Django Database Model</h1>
+
+    <ul>
+        {% for data in django_model %}
+            <li>
+                {{ data.title }}: {% if data.completed %} Completed {% else %} Not completed {% endif %}
+            </li>
+        {% endfor %}
+    </ul>
+
+</body>
+</html>
